@@ -124,6 +124,7 @@ Examples
 ################################################################################
 
 ::
+
     sh $ pytcptunnel.py --base=http:127.0.0.1:80 --target=www.microsoft.com:8080
     sh $ pytcptunnel.py --base=tcp:127.0.0.1:80 --target=www.microsoft.com:8080
 
@@ -134,6 +135,7 @@ add additional headers, `HOST` and `X-Forwarded-For`. In depending on the target
 server, without `http` protocol, the request could not properly handled.
 
 ::
+
     sh $ pytcptunnel.py \
         --base=http:127.0.0.1:443 \
         --target=<http server>:80 \
